@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <view
+        android:id="@+id/puzzlearea"
+        class="com.b105.tamilpuzzle.PuzzleBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alignmentMode="alignBounds"
+        android:animateOnClick="true"
+        android:gravity="center"
+        android:numColumns="@integer/columns"
+        android:stretchMode="columnWidth"
+        android:textSize="12sp"
+        android:verticalSpacing="1dp" />
+
+    <GridView
+        android:id="@+id/wordcheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:numColumns="3" />
+
+
+</LinearLayout>
